@@ -1,0 +1,10 @@
+{
+  "server":"http://sun1350.daytonoh.ncr.com:7778/reports/rwservlet?",
+  "rootArchive":"\\\\warbue8003\\partes\\",
+  "nameArchive":{
+    "Chile":"CHILE.xls",
+    "Colombia":"COLOMBIA.xls",
+    "Peru":"PERU.xls",
+    "RepublicaDominicana":"REPDOMINICANA.xls"
+  }
+}
