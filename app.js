@@ -41,7 +41,7 @@ function buscar(){
 
     downLoadExcel(paramChile,config.get('server'))
         .then((result)=>{
-            fs.writeFile(`${config.get('rootArchive')}${fechaIniArch}_${config.get('nameArchive.Chile')}`,result,(err)=>{
+            fs.writeFile(`${config.get('rootArchive')}${config.get('nameArchive.Chile')}`,result,(err)=>{
                     if(err) console.log("error Write Chile -->",err);
             });
         })
@@ -51,7 +51,7 @@ function buscar(){
 
     downLoadExcel(paramRepublicaDominicana,config.get('server'))
         .then((result)=>{
-            fs.writeFile(`${config.get('rootArchive')}${fechaIniArch}_${config.get('nameArchive.Colombia')}`,result,(err)=>{
+            fs.writeFile(`${config.get('rootArchive')}${config.get('nameArchive.RepublicaDominicana')}`,result,(err)=>{
                 if(err) console.log("error Write RPDomi -->",err)
             });
         })
@@ -61,17 +61,16 @@ function buscar(){
 
     downLoadExcel(paramColombia,config.get('server'))
         .then((result)=>{
-            fs.writeFile(`${config.get('rootArchive')}${fechaIniArch}_${config.get('nameArchive.Peru')}`,result,(err)=>{
+            fs.writeFile(`${config.get('rootArchive')}${config.get('nameArchive.Colombia')}`,result,(err)=>{
                 if(err) console.log("error Write COlombia -->",err)
             });
         })
         .catch((err)=>{
             console.log("descargar COlombia--->", err)
         });
-
     downLoadExcel(paramPeru,config.get('server'))
         .then((result)=>{
-            fs.writeFile(`${config.get('rootArchive')}${fechaIniArch}_${config.get('nameArchive.RepublicaDominicana')}`,result,(err)=>{
+            fs.writeFile(`${config.get('rootArchive')}${config.get('nameArchive.Peru')}`,result,(err)=>{
                 if(err) console.log("error Write PEru -->",err)
             });
         })
