@@ -9,7 +9,7 @@ let config = require('config');
 function buscar(){
     console.log("iniciando -->",moment().format("DD-MM-YYYY HH:mm:ss"));
     //chile
-    let fechaIni = moment().subtract(1,'days').format("DD-MMM-YYYY");
+    let fechaIni = moment().subtract(4,'days').format("DD-MMM-YYYY");
     let fechaFin = moment().format("DD-MMM-YYYY");
     let fechaIniArch = moment().subtract(1,'days').format("YYYYMMDD");
     let paramCompart = {
